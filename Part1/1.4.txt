@@ -1,0 +1,21 @@
+Add -d and -it flags:
+    sudo docker run -d -it --name website ubuntu sh -c 'echo "input website:"; read website; echo "searching..."; sleep 1; curl http://$website;'
+
+Install curl in the container:
+    sudo docker exec website apt-get -qq -y install curl
+
+Attach to a second terminal:
+    sudo docker attach website
+
+Type in the website name:
+    helsinki.fi
+
+Results:
+    searching...
+    <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+    <html><head>
+    <title>301 Moved Permanently</title>
+    </head><body>
+    <h1>Moved Permanently</h1>
+    <p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+    </body></html>

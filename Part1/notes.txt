@@ -4,18 +4,19 @@ Containers:
   -Virtualizes the OS (OS level virtualization vs VM's hardware level virtualization)
   -Fast, lightweight "micro computers" (don't take up much resources)
   -Have their own OS, CPU, memory
-  -Quarantined from the rest of the system and secure (Apps only see whats necessary for them to run and nothing else)
-  -Can run on basically any system anywhere regardless of OS
 
 Containerization:
   -Starts with a description with the container itself (ex. Docker file)
   -Create the image (ex. Docker image)
   -Container ready (contains code, libraries... to run the application)
 
-Allows for super agile DevOps
-If one container isn't using it's resources, the resources become accessible for the other containers running within that hardware
-Load balancing traffic between containers
-Takes less resources than VM's, since every VM needs it's own OS to work
+Benefits of containers:
+  -Allows for super agile DevOps
+  -If one container isn't using it's resources, the resources become accessible for the other containers running within that hardware
+  -Load balancing traffic between containers (easy scaling)
+  -Takes less resources than VM's, since every VM needs it's own OS
+  -Can run on basically any system anywhere regardless of OS
+  -Quarantined from the rest of the system and secure (Apps only see whats necessary for them to run and nothing else)
 
 Containers are instances of images
 
@@ -36,6 +37,13 @@ Container commands:
   -docker container run <image name> (runs container from an image)
   -docker container rm <container name> (removes the container)
   -docker container stop <container name> (stops container)
-  -docker container exec <container name> (executes a command inside the container)
+  -docker container start <container name> (starts container)
+  -docker container exec <container name> (allows executing commands inside the container)
+  -docker container attach <container name> (attaches terminals input / output to a running container)
   -docker container prune (removes all stopped containers)
 
+Command flags:
+  -i (interactive, used to interact with the container via terminal)
+  -t (tty)
+  -d (detached, runs container in the background)
+  -a (all)
