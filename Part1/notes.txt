@@ -47,6 +47,7 @@ Command flags:
   -t (tty)
   -d (detached, runs container in the background)
   -a (all)
+  -v (for creating a volume)
 
 Dockerfile instructions:
   -FROM <image name> (start a pre built image)
@@ -60,3 +61,8 @@ Dockerfile instructions:
 ENTRYPOINT vs CMD?
 CMD commands can be overridden from the CLI when a container is running.
 ENTRYPOINT commands cannot be overridden with CLI params.
+
+Volumes:
+  -Allows the host system and a container to share a file
+  -Place where data can be stored permanently (even when container shuts off)
+  -Same volume can be used in multiple containers

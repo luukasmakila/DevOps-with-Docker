@@ -1,0 +1,5 @@
+Used the --mount syntax instead of -v:
+    sudo docker run -d --mount type=bind,
+    source=/home/makiluuk/Desktop/DevOps-with-Docker/Part1/ex1.9/storage.txt,
+    target=/usr/src/app/text.log 
+    devopsdockeruh/simple-web-service
