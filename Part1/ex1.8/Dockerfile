@@ -2,8 +2,10 @@ FROM ubuntu:20.04
 
 RUN apt-get update ; apt-get install -qq -y curl
 
-COPY prevScript.sh .
+COPY script.txt .
 
-RUN chmod +x prevScript.sh
+RUN chmod +x script.txt
 
-CMD ./prevScript.sh
+ENTRYPOINT ["./script.txt"]
+
+CMD ["param1"]

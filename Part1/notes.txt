@@ -47,3 +47,16 @@ Command flags:
   -t (tty)
   -d (detached, runs container in the background)
   -a (all)
+
+Dockerfile instructions:
+  -FROM <image name> (start a pre built image)
+  -WORKDIR <path> (instructions execute at this location)
+  -COPY <file name> <to this location>
+  -ENV <var name>=<value> (environment variables)
+  -ENTRYPOINT <command> (starting command)
+  -RUN <command / commands> (for ex. install a package or add execution permisisons)
+  -CMD <command> (starting command for "docker run <command>")
+
+ENTRYPOINT vs CMD?
+CMD commands can be overridden from the CLI when a container is running.
+ENTRYPOINT commands cannot be overridden with CLI params.
