@@ -1,0 +1,13 @@
+Alpine version is 385 bytes
+Ubuntu version is 1000 bytes
+
+pulled images with:
+    -sudo docker pull <image name>
+
+ran images with:
+    -sudo docker container run <image name>
+
+went inside the container with:
+    -sudo docker exec -it <container name> sh
+
+tailed the logs and found out they were indeed the same

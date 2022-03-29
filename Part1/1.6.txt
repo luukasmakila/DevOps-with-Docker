@@ -1,0 +1,11 @@
+ran with.
+    -docker run devopsdockeruh/pull-exercise
+
+went to hub.docker.com and searched for the image
+found the link to github repo
+
+in the readme found the password (basics)
+
+secret message:
+    You found the correct password. Secret message is:
+    "This is the secret message"
