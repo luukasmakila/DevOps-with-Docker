@@ -48,6 +48,7 @@ Command flags:
   -d (detached, runs container in the background)
   -a (all)
   -v (for creating a volume)
+  --mount (for bind mounting)
 
 Dockerfile instructions:
   -FROM <image name> (start a pre built image)
