@@ -49,6 +49,7 @@ Command flags:
   -a (all)
   -v (for creating a volume)
   --mount (for bind mounting)
+  -p (specify a port to run the container on)
 
 Dockerfile instructions:
   -FROM <image name> (start a pre built image)
