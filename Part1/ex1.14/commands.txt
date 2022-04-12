@@ -1,0 +1,9 @@
+ran frontend with:
+    -sudo docker run -p 5000:5000 frontend
+
+ran backend with:
+    -sudo docker run -p 8080:8080 backend
+
+navigated to localhost:5000 (frontend port)
+pressed button on ex 1.14
+passed the exercise
