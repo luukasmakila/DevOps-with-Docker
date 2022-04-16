@@ -1,0 +1,7 @@
+If you want to you can only run the frontend image of my app
+but if you want to fully test the app out, then also download 
+the backend image and run them at the same time.
+
+Instructions can be found on the docker hub repos.
+
+Docker hub link: https://hub.docker.com/u/luukasmakila
