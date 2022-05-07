@@ -1,7 +1,5 @@
-If you want to you can only run the frontend of my app
-but if you want to fully test the app out, then also download 
-the backend and run them at the same time.
+Submitted the frontend for one of my own projects called RateMySetup
 
-Instructions can be found on the docker hub repos.
+The Docker hub repo contains all the required info to run the image
 
-Docker hub link: https://hub.docker.com/u/luukasmakila
+Docker hub link: https://hub.docker.com/r/luukasmakila/rmsfrontend
